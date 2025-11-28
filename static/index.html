@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piyo Translator - 汎用ピヨ語翻訳機</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;700&family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="background-animation"></div>
+    <div class="container">
+        <header>
+            <h1>Piyo Translator</h1>
+            <p>あらゆる言葉を、ピヨ語へ。</p>
+        </header>
+
+        <main>
+            <div class="translation-box">
+                <div class="input-area">
+                    <label for="input-text">Input</label>
+                    <textarea id="input-text" placeholder="ここにテキストを入力..."></textarea>
+                </div>
+
+                <div class="controls">
+                    <button id="btn-encode" class="action-btn encode">
+                        <span class="icon">⬇️</span> ピヨ語に変換
+                    </button>
+                    <button id="btn-decode" class="action-btn decode">
+                        <span class="icon">⬆️</span> 日本語に戻す
+                    </button>
+                </div>
+
+                <div class="output-area">
+                    <label for="output-text">Output</label>
+                    <textarea id="output-text" readonly placeholder="翻訳結果が表示されます..."></textarea>
+                    <button id="btn-copy" class="copy-btn">Copy</button>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>© 2024 Piyo Translator Project</p>
+        </footer>
+    </div>
+    <script src="/static/script.js"></script>
+</body>
+</html>
